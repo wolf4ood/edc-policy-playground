@@ -12,8 +12,16 @@
   ~
   -->
 
-<app-header>
-</app-header>
-
-<policy-editor>
-</policy-editor>
+<h1 mat-dialog-title>Edit Constraint</h1>
+<div mat-dialog-content>
+  <div class="pt-2">
+    <atomic-constraint [constraint]="constraint" class="pt-2">
+    </atomic-constraint>
+  </div>
+</div>
+<div mat-dialog-actions align="end">
+  <button mat-button (click)="cancel()">Cancel</button>
+  <button mat-button [mat-dialog-close]="constraint" cdkFocusInitial>
+    Save
+  </button>
+</div>

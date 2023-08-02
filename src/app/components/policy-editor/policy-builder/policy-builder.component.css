@@ -12,12 +12,8 @@
  *
  */
 
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-})
-export class AppComponent {
-  title = 'edc-policy-playground';
+.policy-builder-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }

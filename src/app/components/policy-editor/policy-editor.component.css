@@ -12,12 +12,28 @@
  *
  */
 
-import { Component } from '@angular/core';
+.policy-editor {
+  height: 100%;
+  width: 100%;
+}
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-})
-export class AppComponent {
-  title = 'edc-policy-playground';
+.policy-editor-card {
+  height: 100%;
+  width: 100%;
+}
+.policy-editor-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.policy-card-container {
+  height: 100%;
+  border-radius: 4px;
+  margin: 24px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.policy-split-container {
+  column-gap: 5px;
 }
