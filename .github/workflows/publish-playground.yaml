@@ -20,10 +20,11 @@ jobs:
       - name: npm ci, build and test
         run: |
           npm ci
-          ng build --base-href=/edc-playgound/policy-playgound
+          npm run build -- --base-href=/edc-playgound/policy-playgound
 
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          keep_files: true
