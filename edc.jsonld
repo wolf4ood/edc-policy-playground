@@ -2,13 +2,7 @@
     "@context": {
         "@protected": true,
         "edc": "https://w3id.org/edc/v0.0.1/ns/",
-        "PolicyDefinition": {
-            "@id": "edc:PolicyDefinition2",
-            "@context": {
-                "policy": {
-                    "@id": "edc:policy"
-                }
-            }
-        }
+        "PolicyDefinition": "edc:PolicyDefinition",
+        "policy" : "edc:policy"
     }
 }
