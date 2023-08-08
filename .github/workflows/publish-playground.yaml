@@ -20,7 +20,7 @@ jobs:
       - name: npm ci, build and test
         run: |
           npm ci
-          npm run build -- --base-href=/edc-playground/policy-playground/
+          npm run build -- --base-href=/edc-policy-playground/policy-playground/
 
       - name: deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
